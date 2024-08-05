@@ -1,6 +1,5 @@
 # -*- coding:utf-8 -*-
 import os
-import pickle
 import json
 import argparse
 import numpy as np
@@ -11,7 +10,7 @@ from utils.ecg.util_func import CleanUpECG, ECGFeatureExtractor
 
 def get_args():
     parser = argparse.ArgumentParser()
-    parser.add_argument('--name', default='이양복', type=str)
+    parser.add_argument('--name', default='test', type=str)
     parser.add_argument('--age', default=71, type=int)
     parser.add_argument('--measurement_date', default='2024-07-31 14:36', type=str)
     parser.add_argument('--birth', default='1953-07-20', type=str)
